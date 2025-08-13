@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup form</title>
+</head>
+<body>
+ <div id="pageConatiner">
+  <div id="rightSide">
+      <div id="pictureContainer"><div class="logoOverlay"></div></div>
+      <div id="contentConatainer"><div class="contentHolder"></div>
+  </div>
+  <div id="leftSide">
+      <div class="content">
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda ullam perspiciatis itaque dicta accusantium esse animi facere id quo, officia nesciunt, dolorum aperiam quae harum! Amet accusamus minus fuga!</p> 
+       <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>  
+      <div class="formHolder">
+       <form action="nowhere" method="get">
+        <fieldset>
+         <div>
+             <label for="fName" aria-label="First Name" aria-required="true">First Name</label>
+             <input type="text" name="fName" id="fNameInput" required>
+         </div>
+         <div>
+             <label for="lName" aria-label="Last Name" aria-required="true">Last Name</label>
+             <input type="text" name="lName" id="lNameInput" required>
+         </div>
+        </fieldset>
+        <fieldset>
+         <div>
+             <label for="email" aria-label="email" aria-required="true">Email</label>
+             <input type="email" name="email" id="emailInput" required>
+         </div>
+         <div>
+             <label for="bday" aria-label="birthday" aria-required="false">Birthday</label>
+             <input type="date" name="bday" id="bdayInput" >
+         </div>
+        </fieldset>
+        <fieldset>
+            <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\/-]).+$">
+            </div>
+            <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="confirmPassword" name="confirmPassword" id="confirmPassword" required>
+            </div>
+        </fieldset>
+        <button form="">Submit</button>
+       </form>
+      </div>
+      <div class="ButtonHolder">
+       <p>Already have an account?<a href="http://">Click here to Login.</a></p>
+      </div>
+      </div>  
+       </div>
+  </div> 
+</body>
+</html>

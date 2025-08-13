@@ -1,0 +1,6 @@
+:root {
+font-size: min(14px,2vw);    
+}
+a:visited{
+color: blueviolet;    
+}
