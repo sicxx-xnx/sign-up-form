@@ -5,7 +5,8 @@ p{font-size: min(1.2rem,4vw); ;
 
 }
 a{
-color: orange;    
+color: orange;   
+
 }
 a:visited{
 color: red;
@@ -15,7 +16,10 @@ text-decoration-style: none;
 #rightSide,
 #leftSide{
 width: 50%;
-height: 100vh;    
+height: 100vh; 
+display: flex;
+flex-direction: column;
+justify-content: center;   
 }
 #rightSide{
 background-image: url(../images/jay-rembert-N-ztJKngIX4-unsplash.jpg);    
@@ -23,4 +27,23 @@ background-image: url(../images/jay-rembert-N-ztJKngIX4-unsplash.jpg);
 #pageConatiner{
 display: flex;
 align-content: center;    
+}
+#leftSide .content,
+.formHolder,
+.ButtonHolder{
+padding: 2vh 10vh 5vh 5vh ;    
+}
+.formHolder{
+box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.59);
+-webkit-box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.59);
+-moz-box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.59);
+}
+.ButtonHolder > p {
+font-size: .8rem;    
+}
+p > a {
+font-size: 1rem;    
+}
+.content > p {
+font-size: 1.5rem;    
 }
