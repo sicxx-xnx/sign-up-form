@@ -1,6 +1,14 @@
 :root {
-font-size: min(14px,2vw);    
+font-size: 14px;    
+}
+p{font-size: min(1.2rem,4vw); ;
+
+}
+a{
+color: orange;    
 }
 a:visited{
-color: orange;    
+color: red;
+text-decoration:none;
+text-decoration-style: none;   
 }
