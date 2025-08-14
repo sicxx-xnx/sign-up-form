@@ -9,7 +9,7 @@
 <body>
  <div id="pageConatiner">
   <div id="rightSide">
-      <div id="pictureContainer"><div class="logoOverlay"></div></div>
+      <div id="pictureContainer" style="display: flex; height: 30%; align-items: center; background-color: rgba(37, 37, 37, 0.305); justify-content: center;"><img src="images/Unconfirmed 959693.crdownload" alt="Odin logo" width="auto" height="150px"><h1 style="color: aliceblue; font-size: 150px;">ODIN</h1></div>
       <div id="contentConatainer"><div class="contentHolder"></div>
   </div></div>
   <div id="leftSide">
@@ -21,18 +21,18 @@
        <form action="nowhere" method="get">
         <fieldset>
          <div>
-             <label for="fName" aria-label="First Name" aria-required="true">First Name</label>
-             <input type="text" name="fName" id="fNameInput" required>
+             <label for="fName" aria-label="First Name" aria-required="true">First Name *</label>
+             <input type="text" name="fName" id="fNameInput" required title="Please enter your First Name">
          </div>
          <div>
-             <label for="lName" aria-label="Last Name" aria-required="true">Last Name</label>
-             <input type="text" name="lName" id="lNameInput" required>
+             <label for="lName" aria-label="Last Name" aria-required="true">Last Name *</label>
+             <input type="text" name="lName" id="lNameInput" required title="Please enter your Last Name">
          </div>
         </fieldset>
         <fieldset>
          <div>
-             <label for="email" aria-label="email" aria-required="true">Email</label>
-             <input type="email" name="email" id="emailInput" required>
+             <label for="email" aria-label="email" aria-required="true">Email *</label>
+             <input type="email" name="email" id="emailInput" required title="Please enter a valid Email">
          </div>
          <div>
              <label for="bday" aria-label="birthday" aria-required="false">Birthday</label>
@@ -41,11 +41,14 @@
         </fieldset>
         <fieldset>
             <div>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\/-]).+$">
+        <label for="password">Password *</label>
+        <input type="password" name="password" id="password" required 
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\-\[\]:;<>,.?~\\\/]).{8,}$" 
+        title="Password must contain at least 8 characters, including uppercase, lowercase, and special character."
+>
             </div>
             <div>
-            <label for="confirmPassword">Confirm Password</label>
+            <label for="confirmPassword">Confirm Password *</label>
             <input type="confirmPassword" name="confirmPassword" id="confirmPassword" required>
             </div>
         </fieldset>
