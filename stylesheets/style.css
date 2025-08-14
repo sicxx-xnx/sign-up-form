@@ -1,5 +1,7 @@
+
 :root {
 font-size: 14px;    
+--fontSize: min(1.2rem,4vw)
 }
 p{font-size: min(1.2rem,4vw); ;
 
@@ -46,4 +48,48 @@ font-size: 1rem;
 }
 .content > p {
 font-size: 1.5rem;    
+}
+form > button {
+margin-top: 2vh;   
+width: 20vh; 
+height: 4vh;
+border-radius: 10px;
+background-color: orange;
+color: white;
+font-size: min(1.2rem,4vw);
+border-color: orange;
+}
+fieldset{
+display: flex;
+border: none;    
+gap: 10%;
+}
+fieldset > div,
+fieldset > div + div {
+display: flex;
+flex-direction: column;
+padding: 0 5% 5% 0; 
+width: 15vw;   
+}
+
+input{
+height: min(1.2rem,4vw); 
+width: 100%; 
+margin-top: 1vh; 
+font-size: var(--fontSize); 
+}
+label {
+font-size:var(--fontSize) ;    
+}
+input:invalid{
+border: 1px solid red;    
+}
+input:valid{
+border: 1px solid green; 
+background-color: green;   
+}
+input:active{
+border: 1px solid yellow;
+background-color: yellow;    
+
 }
