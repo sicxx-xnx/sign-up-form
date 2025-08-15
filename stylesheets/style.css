@@ -1,10 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 :root {
 font-size: 14px;    
 --fontSize: min(1.2rem,4vw)
 }
 p{font-size: min(1.2rem,4vw); ;
-
+ font-family: "Sarala"
 }
 a{
 color: orange;   
@@ -24,7 +26,9 @@ flex-direction: column;
 justify-content: center;   
 }
 #rightSide{
-background-image: url(../images/jay-rembert-N-ztJKngIX4-unsplash.jpg);    
+background-image: url(../images/michiel-annaert-TEWLhkplCOo-unsplash.png);
+background-repeat: no-repeat;
+background-size: cover;    
 }
 #pageConatiner{
 display: flex;
@@ -140,4 +144,8 @@ box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.59);
 -webkit-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.59);
 -moz-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.59);
 }
+}
+
+.logo{
+font-family: "Roboto Slab", serif;    
 }
